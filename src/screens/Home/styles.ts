@@ -60,4 +60,5 @@ export const Trash = styled(RectButton)`
 export const TrashIcon = styled(Feather)`
   flex: 1;
   font-size: 20px;
+  color: #CC2222;
 `;
