@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components/native';
 import Feather from '@expo/vector-icons/Feather';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 import { RFValue } from 'react-native-responsive-fontsize';
+import { RectButton } from 'react-native-gesture-handler';
 
 interface ContainerProps {
   hasUserData: boolean;
@@ -11,8 +12,8 @@ export const Container = styled.View<ContainerProps>`
   flex-direction: row;
   align-items: center;
   padding: ${({ hasUserData }) => hasUserData
-    ? `${getStatusBarHeight(true) + 16}px  24px 60px 24px`
-    : `${getStatusBarHeight(true) + 9}px 0 23px 0`
+    ? `${getStatusBarHeight(true) + 22}px  24px 60px 24px`
+    : `${getStatusBarHeight(true) + 22}px 0 23px 0`
   }
   ${({ hasUserData }) => hasUserData && css`
     justify-content: space-between;
@@ -54,10 +55,13 @@ export const SecondaryMessage = styled.Text`
   color: #ffffff;
 `;
 
-export const AddButton = styled.Pressable`
-  padding: ${RFValue(14.5)}px;
+export const AddButtonContainer = styled.View`
   border: 1.5px #508bfc;
   border-radius: 4px;
+`;
+
+export const AddButton = styled(RectButton)`
+  padding: ${RFValue(14.5)}px;
 `;
 
 export const Icon = styled(Feather)``;
@@ -71,6 +75,6 @@ export const BackButton = styled.Pressable`
 export const Title = styled.Text`
   font-size: ${RFValue(20)}px;
   font-family: 'Rubik_500Medium';
-  color: #3D434D;
+  color: #FFFFFF;
   margin: auto;
 `;

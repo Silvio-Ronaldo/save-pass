@@ -10,6 +10,7 @@ import {
   HelloMessage,
   BoldText,
   SecondaryMessage,
+  AddButtonContainer,
   AddButton,
   Icon,
   BackButton,
@@ -33,15 +34,7 @@ export function Header({ user }: HeaderProps) {
   return (
     <Container
       hasUserData={!!user}
-      style={{
-        ...(user
-          ? {
-            backgroundColor: '#1967FB'
-          }
-          : {
-            backgroundColor: '#FFFFFF'
-          })
-      }}
+      style={{ backgroundColor: '#1967FB' }}
     >
       {user ? (
         <>
@@ -59,20 +52,22 @@ export function Header({ user }: HeaderProps) {
             </TextContainer>
           </AboutUser>
 
-          <AddButton onPress={handleAddPass}>
-            <Icon
-              name="plus"
-              color="#FFFFFF"
-              size={24}
-            />
-          </AddButton>
+          <AddButtonContainer>
+            <AddButton onPress={handleAddPass}>
+              <Icon
+                name="plus"
+                color="#FFFFFF"
+                size={24}
+              />
+            </AddButton>
+          </AddButtonContainer>
         </>
       ) : (
         <>
           <BackButton onPress={goBack}>
             <Icon
               name="chevron-left"
-              color="#1967FB"
+              color="#FFFFFF"
               size={28}
             />
           </BackButton>
