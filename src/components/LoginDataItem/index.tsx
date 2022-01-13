@@ -33,7 +33,7 @@ export function LoginDataItem({
     <Container
       colors={[
         passIsVisible
-          ? '#EBF2FF'
+          ? '#EBF2FF='
           : '#ffffff',
         '#ffffff'
       ]}

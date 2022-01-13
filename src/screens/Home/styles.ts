@@ -1,7 +1,8 @@
 import styled from 'styled-components/native';
 import { FlatList } from 'react-native';
-
 import { RFValue } from 'react-native-responsive-fontsize';
+import { Feather } from '@expo/vector-icons'
+import { BorderlessButton, RectButton } from 'react-native-gesture-handler';
 
 interface LoginListDataProps {
   id: string;
@@ -43,4 +44,20 @@ export const LoginList = styled(
   showsVerticalScrollIndicator: false,
 })`
   margin-top: ${RFValue(16)}px;
+`;
+
+export const LoginContainer = styled.View`
+  position: relative;
+`;
+
+export const Trash = styled(RectButton)`
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 10px;
+`;
+
+export const TrashIcon = styled(Feather)`
+  flex: 1;
+  font-size: 20px;
 `;
