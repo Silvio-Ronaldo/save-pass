@@ -33,18 +33,19 @@
   📋 Table of contents
 </h2>
 <ul>
-  <li><a href="https://github.com/Silvio-Ronaldo/GoFinances#%EF%B8%8F-demonstration">Demonstration</a></li>
-  <li><a href="https://github.com/Silvio-Ronaldo/GoFinances#%EF%B8%8F-technologies">Technologies</a></li>
-  <li><a href="https://github.com/Silvio-Ronaldo/GoFinances#-author">Author</a></li>
-  <li><a href="https://github.com/Silvio-Ronaldo/GoFinances#%EF%B8%8F-license">License</a></li>
+  <li><a href="https://github.com/Silvio-Ronaldo/save-pass#%EF%B8%8F-demonstration">Demonstration</a></li>
+  <li><a href="https://github.com/Silvio-Ronaldo/save-pass#%EF%B8%8F-technologies">Technologies</a></li>
+  <li><a href="https://github.com/Silvio-Ronaldo/save-pass#-author">Author</a></li>
+  <li><a href="https://github.com/Silvio-Ronaldo/save-pass#%EF%B8%8F-license">License</a></li>
 </ul></br>
 
 
 
 <h2>🖥️ Demonstration</h2>
 <p align="center">
-  <img src="./github/gofinances.gif" alt="SavePass Demo" height="500" />
-  <img src="./github/gofinances2.gif" alt="SavePass Demo" height="500" />
+  <img src="./assets/save-pass-01.gif" alt="SavePass Demo" height="500" />
+  <img src="./assets/save-pass-02.gif" alt="SavePass Demo" height="500" />
+  <img src="./assets/save-pass-03.gif" alt="SavePass Demo" height="500" />
 </p>
  
 
